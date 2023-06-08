@@ -1,18 +1,15 @@
 'use client'
 
-import fetchRandomAdvice from '@/utils/fetchRandomAdvice'
+import useSWR, { useSWRConfig } from 'swr'
 import { useRouter } from 'next/navigation'
 
-type Props = {
-	clickHandler: React.MouseEventHandler<HTMLButtonElement>
-}
-
 const Button = () => {
-	const router = useRouter()
+	// const router = useRouter()
+	const { mutate } = useSWRConfig()
 
 	const handleClick = async () => {
-		const { id } = await fetchRandomAdvice()
-		router.push(`/advice?id=${id}`)
+		// router.refresh()
+		mutate('/api/advices')
 	}
 
 	return (
