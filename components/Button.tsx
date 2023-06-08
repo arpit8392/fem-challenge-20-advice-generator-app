@@ -18,6 +18,7 @@ const Button = () => {
 						fill='#202733'
 					/>
 				</svg>
+				<span className='sr-only'>Generate Advice Button</span>
 			</div>
 		</button>
 	)
