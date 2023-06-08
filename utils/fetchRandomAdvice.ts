@@ -1,6 +1,5 @@
 const fetchRandomAdvice = async () => {
 	try {
-		console.log('Fetching new advice...')
 		const res = await fetch('https://api.adviceslip.com/advice', {
 			cache: 'no-store',
 		})
