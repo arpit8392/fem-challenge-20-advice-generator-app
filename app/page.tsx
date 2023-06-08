@@ -2,7 +2,8 @@ import AdviceCard from '@/components/AdviceCard'
 import fetchRandomAdvice from '@/utils/fetchRandomAdvice'
 
 export default async function Home() {
-	const { id, advice } = await fetchRandomAdvice()
+	const adviceData = await fetchRandomAdvice()
+	const { id, advice } = adviceData
 
 	return (
 		<main>
