@@ -1,15 +1,12 @@
 'use client'
 
-import useSWR, { useSWRConfig } from 'swr'
 import { useRouter } from 'next/navigation'
 
 const Button = () => {
-	// const router = useRouter()
-	const { mutate } = useSWRConfig()
+	const router = useRouter()
 
 	const handleClick = async () => {
-		// router.refresh()
-		mutate('/api/advices')
+		router.refresh()
 	}
 
 	return (

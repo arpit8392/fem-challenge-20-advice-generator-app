@@ -5,7 +5,7 @@ const Advice = ({ id, advice }: Advice) => {
 				{`Advice #${id}`}
 			</p>
 			<h1 className='text-2xl font-extrabold tracking-wide md:text-3xl md:leading-snug md:tracking-wider'>
-				{`“ ${advice} ”`}
+				{`“${advice}”`}
 			</h1>
 		</div>
 	)

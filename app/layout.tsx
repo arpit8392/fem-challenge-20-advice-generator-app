@@ -17,7 +17,7 @@ export default function RootLayout({
 	return (
 		<html lang='en'>
 			<body
-				className={`${manrope.className} grid min-h-screen place-content-center bg-darkBlue text-lightCyan`}>
+				className={`${manrope.className} grid min-h-screen justify-items-center bg-darkBlue px-4 py-28 text-lightCyan md:place-content-center`}>
 				{children}
 			</body>
 		</html>
