@@ -5,6 +5,8 @@ const Divider = () => {
 				className='block md:hidden'
 				width='295'
 				height='16'
+				aria-hidden={true}
+				focusable={false}
 				xmlns='http://www.w3.org/2000/svg'>
 				<g fill='none' fillRule='evenodd'>
 					<path fill='#4F5D74' d='M0 8h122v1H0zM173 8h122v1H173z' />
@@ -18,6 +20,8 @@ const Divider = () => {
 				className='hidden md:block'
 				width='444'
 				height='16'
+				aria-hidden={true}
+				focusable={false}
 				xmlns='http://www.w3.org/2000/svg'>
 				<g fill='none' fillRule='evenodd'>
 					<path fill='#4F5D74' d='M0 8h196v1H0zM248 8h196v1H248z' />
