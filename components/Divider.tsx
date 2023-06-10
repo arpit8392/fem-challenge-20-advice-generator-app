@@ -1,36 +1,22 @@
+import Image from 'next/image'
+
 const Divider = () => {
 	return (
 		<div>
-			<svg
-				className='block md:hidden'
-				width='295'
-				height='16'
-				aria-hidden={true}
-				focusable={false}
-				xmlns='http://www.w3.org/2000/svg'>
-				<g fill='none' fillRule='evenodd'>
-					<path fill='#4F5D74' d='M0 8h122v1H0zM173 8h122v1H173z' />
-					<g transform='translate(138)' fill='#CEE3E9'>
-						<rect width='6' height='16' rx='3' />
-						<rect x='14' width='6' height='16' rx='3' />
-					</g>
-				</g>
-			</svg>
-			<svg
-				className='hidden md:block'
-				width='444'
-				height='16'
-				aria-hidden={true}
-				focusable={false}
-				xmlns='http://www.w3.org/2000/svg'>
-				<g fill='none' fillRule='evenodd'>
-					<path fill='#4F5D74' d='M0 8h196v1H0zM248 8h196v1H248z' />
-					<g transform='translate(212)' fill='#CEE3E9'>
-						<rect width='6' height='16' rx='3' />
-						<rect x='14' width='6' height='16' rx='3' />
-					</g>
-				</g>
-			</svg>
+			<Image
+				src={'/images/pattern-divider-mobile.svg'}
+				alt='Section Divider Illustration for Mobile'
+				height={16}
+				width={295}
+				className='block md:hidden '
+			/>
+			<Image
+				src={'/images/pattern-divider-desktop.svg'}
+				alt='Section Divider Illustration for Desktop'
+				height={16}
+				width={444}
+				className='hidden md:block '
+			/>
 		</div>
 	)
 }
